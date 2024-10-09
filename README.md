@@ -52,7 +52,7 @@ Use spjson.py to convert the database information into a JSON format suitable fo
 Viewing the Results:
 
 Open force.html in a web browser, which uses the JSON file (spider.js) to display a visual representation of the pages and their links.
-![pagerank](https://github.com/user-attachments/assets/1d8d2d65-47cb-4d3f-aa0f-b48c3f23f1c3)
+![pagerank](https://github.com/user-attachments/assets/06b53593-fcc1-418e-ba2c-c457403f5639)
 
 
 Summary
