@@ -1,18 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Force-Directed Layout</title>
+    
+    <!-- External JavaScript Libraries -->
     <script type="text/javascript" src="d3.v2.js"></script>
     <script type="text/javascript" src="spider.js"></script>
-    <link type="text/css" rel="stylesheet" href="force.css"/>
+
+    <!-- External CSS File -->
+    <link type="text/css" rel="stylesheet" href="force.css" />
+
+    <!-- Internal Styles -->
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #2c3e50;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      #chart {
+        width: 80%;
+        height: 600px;
+        margin: 50px auto;
+        border: 2px solid #3498db;
+        background-color: #ecf0f1;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        color: #7f8c8d;
+        font-size: 14px;
+      }
+
+      p {
+        color: #34495e;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body style="font-family: sans-serif;">
+  <body>
+    <!-- Header Section -->
+    <header>
+      Force-Directed Layout Visualization
+    </header>
+
+    <!-- URL Information -->
     <script>
-        document.write("<p>Starting url: "+spiderJson.nodes[0].url+"</p>");
+      document.write("<p>Starting URL: <strong>" + spiderJson.nodes[0].url + "</strong></p>");
     </script>
-    <div id="chart" style="border:1px"></div>
+
+    <!-- Chart Container -->
+    <div id="chart">Loading chart...</div>
+
+    <!-- Footer -->
+    <footer>
+      If you don't see a chart above, check the JavaScript console. You may need to use a different browser.
+    </footer>
+
+    <!-- Force-Directed Graph Script -->
     <script type="text/javascript" src="force.js"></script>
-	<p>If you don't see a chart above, check the JavaScript console. You may
-	need to use a different browser.</p>
   </body>
 </html>
