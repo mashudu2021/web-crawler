@@ -52,6 +52,9 @@ Use spjson.py to convert the database information into a JSON format suitable fo
 Viewing the Results:
 
 Open force.html in a web browser, which uses the JSON file (spider.js) to display a visual representation of the pages and their links.
+![pagerank](https://github.com/user-attachments/assets/1d8d2d65-47cb-4d3f-aa0f-b48c3f23f1c3)
+
+
 Summary
 Crawl: Collect data about web pages and links.
 Rank: Calculate the importance of each page.
